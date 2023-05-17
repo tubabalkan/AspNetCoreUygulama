@@ -1,0 +1,69 @@
+﻿<!--
+    C# kodu yazmak isteersek"et"işareti  kullanırız tek satır bir kod ise
+    paranteze gerek  yok ama çok satırlı ise paranteze gerek var
+
+ -->
+@model UdemyAspNetCore.Models.Customer
+@{
+    //int age = 27;
+    //string value = string.Empty;
+    //if(age > 18)
+    // {
+    //   value = "Yasi 18 den buyuk";
+    // }
+    // else
+    //{
+    //   value = "Yasi 18 den kucuk";
+    // }
+
+    //int Calculate(int number1, int number2)
+    //{
+    // return number1 + number2;
+    // }
+    // var result = Calculate(1, 2);
+
+    //List<string> names = new() { "Tuba", "Remi", "Arel", "Mahir" };
+}
+
+<p>
+    ViewBag.Name =  @ViewBag.Name
+</p>
+<hr />
+<p>
+    ViewData["Name"]=@ViewData["Name"]
+</p>
+<hr />
+<p>
+    TempData["Name"]=@TempData["Name"]
+</p>
+<hr />
+<p>
+    FirstName = @Model.FirstName
+    <br />
+    <hr />
+
+    LastName = @Model.LastName
+    <br />
+    <hr />
+    Age = @Model.Age
+</p>
+
+
+
+
+    @*foreach (var item in names)
+        {
+            <p>
+
+                @(item=="Remi"?"Remi Eğitmen":item)
+            </p>
+
+        }
+        <p>
+            <!--
+                    Durum = @(age>18?"Yaşı 18 den büyük":"Yaşı 18 den küçük")
+
+                -->
+
+        </p>
+    *@
